@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A212178127CAAF240046A50D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212178027CAAF240046A50D /* main.swift */; };
+		A212178E27CDBAC50046A50D /* Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212178D27CDBAC50046A50D /* Unit_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,19 @@
 /* Begin PBXFileReference section */
 		A212177D27CAAF240046A50D /* Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A212178027CAAF240046A50D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A212178B27CDBAC50046A50D /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A212178D27CDBAC50046A50D /* Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A212177A27CAAF240046A50D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A212178827CDBAC50046A50D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				A212177F27CAAF240046A50D /* Linked List */,
+				A212178C27CDBAC50046A50D /* Unit Tests */,
 				A212177E27CAAF240046A50D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A212177D27CAAF240046A50D /* Linked List */,
+				A212178B27CDBAC50046A50D /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +72,14 @@
 				A212178027CAAF240046A50D /* main.swift */,
 			);
 			path = "Linked List";
+			sourceTree = "<group>";
+		};
+		A212178C27CDBAC50046A50D /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A212178D27CDBAC50046A50D /* Unit_Tests.swift */,
+			);
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +102,23 @@
 			productReference = A212177D27CAAF240046A50D /* Linked List */;
 			productType = "com.apple.product-type.tool";
 		};
+		A212178A27CDBAC50046A50D /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A212178F27CDBAC50046A50D /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				A212178727CDBAC50046A50D /* Sources */,
+				A212178827CDBAC50046A50D /* Frameworks */,
+				A212178927CDBAC50046A50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+			productReference = A212178B27CDBAC50046A50D /* Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +130,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					A212177C27CAAF240046A50D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A212178A27CDBAC50046A50D = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -111,9 +151,20 @@
 			projectRoot = "";
 			targets = (
 				A212177C27CAAF240046A50D /* Linked List */,
+				A212178A27CDBAC50046A50D /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A212178927CDBAC50046A50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A212177927CAAF240046A50D /* Sources */ = {
@@ -121,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A212178127CAAF240046A50D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A212178727CDBAC50046A50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A212178E27CDBAC50046A50D /* Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +323,36 @@
 			};
 			name = Release;
 		};
+		A212179027CDBAC50046A50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVANLHN948;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrpaschenko.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A212179127CDBAC50046A50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVANLHN948;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrpaschenko.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +370,15 @@
 			buildConfigurations = (
 				A212178527CAAF240046A50D /* Debug */,
 				A212178627CAAF240046A50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A212178F27CDBAC50046A50D /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A212179027CDBAC50046A50D /* Debug */,
+				A212179127CDBAC50046A50D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
