@@ -28,4 +28,6 @@ swift main.swift
 
 ## Tests
 
+___
+
 > [CI tests commit](https://github.com/MrPaschenko/linked-list)
