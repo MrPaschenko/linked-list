@@ -7,5 +7,14 @@
 
 import Foundation
 
-print("Hello, World!")
-
+class LinkedNode {
+    var value: Character
+    var previous: LinkedNode?
+    var next: LinkedNode?
+    
+    init(value: Character, previous: LinkedNode?, next: LinkedNode?) {
+        self.value = value
+        self.previous = previous
+        self.next = next
+    }
+}
