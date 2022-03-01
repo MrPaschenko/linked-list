@@ -1,27 +1,20 @@
-//
-//  main.swift
-//  Linked List
-//
-//  Created by Дмитрий Пащенко on 26.02.2022.
-//
-
 import Foundation
 
-class LinkedNode {
+class Node {
     var value: Character
-    var previous: LinkedNode?
-    var next: LinkedNode?
+    var previous: Node?
+    var next: Node?
     
-    init(value: Character, previous: LinkedNode?, next: LinkedNode?) {
+    init(value: Character, previous: Node?, next: Node?) {
         self.value = value
         self.previous = previous
         self.next = next
     }
 }
 
-class LinkedList {
-    var head: LinkedNode?
-    var tail: LinkedNode?
+class List {
+    var head: Node?
+    var tail: Node?
     
     //TODO: Операція визначення довжини списку. Якщо список непорожній, то ця операція повинна повертати кількість елементів у списку. Якщо список порожній, то ця операція повинна повертати 0.
     func length() -> Int {
@@ -58,7 +51,7 @@ class LinkedList {
     }
     
     //TODO: Операція копіювання списку. При виклику повинен створити копію поточного списку та повернути її.
-    func clone() -> LinkedList {
+    func clone() -> List {
         
     }
     
@@ -83,7 +76,7 @@ class LinkedList {
     }
     
     //TODO: Операція розширення списку. Метод приймає інший список та додає до поточного списку усі елементи останнього. При цьому подальші зміни в другий список не повинні впливати на перший.
-    func extend(elements: LinkedList) {
+    func extend(elements: List) {
         
     }
 }
