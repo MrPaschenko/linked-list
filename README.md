@@ -2,7 +2,7 @@
 
 [This is **lab 2** for Software Development Methodologies and Technologies](https://docs.google.com/document/d/1SRRPKRRHw2gRPdYLC3ENGgVIKVMpeZ3eCzFd9bkrSEA)
 
-This is Swift realization of Doubly Linked List
+This is Swift realization of Doubly Linked List data structure
 > My gradebook number is 0419. [419 = 209×2 + 1](https://www.wolframalpha.com/input?i=419+%2F+2). The remainder of the division is 1, so my variant is **Doubly Linked List**
 
 ## Installation
@@ -26,5 +26,6 @@ swift main.swift
 
 ## Usage
 
+## Tests
 
 > [CI tests commit](https://github.com/MrPaschenko/linked-list)
