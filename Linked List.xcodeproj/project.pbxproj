@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A212178127CAAF240046A50D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212178027CAAF240046A50D /* main.swift */; };
+		A212178127CAAF240046A50D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212178027CAAF240046A50D /* Node.swift */; };
 		A212178E27CDBAC50046A50D /* Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212178D27CDBAC50046A50D /* Unit_Tests.swift */; };
+		A212179327CDC53D0046A50D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212179227CDC53D0046A50D /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +26,10 @@
 
 /* Begin PBXFileReference section */
 		A212177D27CAAF240046A50D /* Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A212178027CAAF240046A50D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A212178027CAAF240046A50D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		A212178B27CDBAC50046A50D /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A212178D27CDBAC50046A50D /* Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Tests.swift; sourceTree = "<group>"; };
+		A212179227CDC53D0046A50D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,8 @@
 		A212177F27CAAF240046A50D /* Linked List */ = {
 			isa = PBXGroup;
 			children = (
-				A212178027CAAF240046A50D /* main.swift */,
+				A212178027CAAF240046A50D /* Node.swift */,
+				A212179227CDC53D0046A50D /* List.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -171,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A212178127CAAF240046A50D /* main.swift in Sources */,
+				A212178127CAAF240046A50D /* Node.swift in Sources */,
+				A212179327CDC53D0046A50D /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
