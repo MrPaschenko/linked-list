@@ -4,11 +4,6 @@ class List {
     var head: Node?
     var tail: Node?
     
-    init(head: Node?, tail: Node?) {
-        self.head = head
-        self.tail = tail
-    }
-
     //TODO: Операція визначення довжини списку. Якщо список непорожній, то ця операція повинна повертати кількість елементів у списку. Якщо список порожній, то ця операція повинна повертати 0.
     func length() -> Int {
         if self.head == nil {
