@@ -45,7 +45,7 @@ class List {
         
         if index < 0 || index >= length {
             print("Index is out of range")
-        } else if index == length - 1 {
+        } else if index == length {
             self.append(element: element)
         } else if index == 0 {
             let node = Node(value: element)

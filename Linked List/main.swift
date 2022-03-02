@@ -7,5 +7,5 @@ newList.append(element: "C")
 //print(newList.length())
 
 
-newList.insert(element: "K", index: 0)
-print(newList.head?.value as Any)
+newList.insert(element: "K", index: 2)
+print(newList.tail?.value as Any)
