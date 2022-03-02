@@ -4,4 +4,8 @@ var newList = List()
 newList.append(element: "A")
 newList.append(element: "B")
 newList.append(element: "C")
-print(newList.length())
+//print(newList.length())
+
+
+newList.insert(element: "K", index: 0)
+print(newList.head?.value as Any)

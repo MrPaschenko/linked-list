@@ -40,9 +40,33 @@ class List {
     
     //TODO: Операція вставки елементу на довільну позицію у списку. Нумерація елементів списку починається з 0.
     /// У випадку передачі некоректного значення позиції (наприклад, від’ємне число, або число, більше за кількість елементів у списку) метод повинен генерувати виключну ситуацію
-//    func insert(element: Character, index: Int) {
-//
-//    }
+    func insert(element: Character, index: Int) {
+        let length = self.length()
+        
+        if index < 0 || index >= length {
+            print("Index is out of range")
+        } else if index == length - 1 {
+            self.append(element: element)
+        } else if index == 0 {
+            let node = Node(value: element)
+            
+            self.head?.previous = node
+            node.next = self.head
+            self.head = node
+        } else {
+            let node = Node(value: element)
+            
+            var currentNode = self.head
+            for _ in 0..<index {
+                currentNode = currentNode?.next
+            }
+            
+            currentNode?.previous?.next = node
+            node.previous = currentNode?.previous
+            currentNode?.previous = node
+            node.next = currentNode
+        }
+    }
     
     //TODO: Операція видалення елементу зі списку на вказаній позиції. Метод повинен повертати значення того елементу, який видаляється. Нумерація елементів списку починається з 0.
     /// У випадку передачі некоректного значення позиції (наприклад, від’ємне число, або число, більше за індекс останнього елементу списку) метод повинен генерувати виключну ситуацію
