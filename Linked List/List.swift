@@ -44,6 +44,7 @@ class List {
         let length = self.length()
         
         if index < 0 || index >= length {
+            //TODO: Error
             print("Index is out of range")
         } else if index == length {
             self.append(element: element)
