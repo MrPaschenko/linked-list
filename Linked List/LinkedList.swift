@@ -26,9 +26,17 @@ class List {
     }
     
     //TODO:  Операція додавання елементу в кінець списку.
-//    func append(element: Character) {
-//
-//    }
+    func append(element: Character) {
+        let node = Node(value: element)
+        
+        if self.head == nil {
+            self.head = node
+        } else {
+            node.previous = self.tail
+            self.tail?.next = node
+        }
+        self.tail = node
+    }
     
     //TODO:  Операція вставки елементу на довільну позицію у списку. Нумерація елементів списку починається з 0.
     /// У випадку передачі некоректного значення позиції (наприклад, від’ємне число, або число, більше за кількість елементів у списку) метод повинен генерувати виключну ситуацію
